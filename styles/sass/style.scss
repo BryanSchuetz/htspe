@@ -1,12 +1,15 @@
 @import "hacks";
 @import "variables";
+@import "grid";
+
+
 *{
   box-sizing: border-box;
 }
 
 body{
   font-family: 'Permanent Marker', cursive;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -91,5 +94,41 @@ hr{
 .subpage-menu a{
   display: inline-block;
   margin-right: 15px;
+}
+//—————————————————————//
+//****Media Queries****//
+//—————————————————————//
+/*
+  Mobile layout
+  240–479 px
+  Zoomed out below 320 px
+*/
+
+@media screen and (min-width: 15em) {
+
+}
+/*
+  Wide mobile layout
+  480-767 px
+  Zoomed in above 480 px
+*/
+@media screen and (min-width: 30em) {
+
+}
+/*
+  Tablet layout
+  600-911 px
+  Zoomed in above 600 px
+*/
+@media screen and (min-width: 37.5em) {
+
+}
+/*
+  Widescreen layout
+  912-1887 px
+  Zoomed in above 912 px
+*/
+@media screen and (min-width: 57em) {
+
 }
 /* I got 99 problems, but this last line ain't one */
