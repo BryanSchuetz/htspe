@@ -3,11 +3,19 @@
   {% include 'includes/head' %}
   <body>
     <div class="wrap">
+      <div class="utility-bar cf">
+        <ul>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
       <header class="primary-header">
         <h1 class="site-title"><a href="/">{{site.title}}</a></h1>
         {% include 'includes/primary-nav' %}
       </header>
       {{ content }}
     </div>
+    {% include 'includes/footer' %}
   </body>
 </html>

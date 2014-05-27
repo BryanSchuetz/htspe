@@ -24,10 +24,32 @@ article, header, nav, section {
 
 /* Page Layout
 ================================ */
-
+body{
+  margin: 0;
+}
 .wrap{
-  margin: .5em auto;
   overflow: hidden;
+}
+.utility-bar{
+  padding: .5em;
+  background-color: $blue;
+  ul{
+    list-style: none;
+    margin: 0;
+    li{
+      float: right;
+      margin-right: 1.5em;
+      a{
+        color: $white;
+      }
+      a:hover{
+        color: $white;
+      }
+      a:visited{
+        color: $white;
+      }
+    }
+  }
 }
 header{
   @include width(5);
@@ -37,14 +59,19 @@ header{
   @include width(5);
   margin: auto;
 }
-
+.footer{
+  min-height: 4em;
+  padding: .5em;
+  background-color: $blue;
+  margin-top: 1em;
+}
 /* Section Styles
 ================================ */
 
 /* Page */
 
 a{
-  color: #0091e5;
+  color: $blue;
   text-decoration: none;
 }
 
@@ -125,6 +152,9 @@ hr{
     }
   }
 }
+.news-block-one, .news-block-two{
+  @include width(5);
+}
 //—————————————————————//
 //****Media Queries****//
 //—————————————————————//
@@ -157,6 +187,16 @@ hr{
   }
   .section-col2{
     @include width(2);
+  }
+  .news-block-one, .news-block-two{
+    @include width(3);
+  }
+  .news-block-one{
+    float: left;
+    margin-right: $gutter;
+  }
+  .news-block-two{
+    float: right;
   }
 }
 /*
@@ -231,6 +271,9 @@ hr{
   }
   .section-col2{
     @include width(4);
+  }
+  .news-block-one, .news-block-two{
+    @include width(5);
   }
 }
 /* I got 99 problems, but this last line ain't one */
